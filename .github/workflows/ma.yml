@@ -12,7 +12,13 @@ jobs:
         with:
           repository: GEETHA9999/DevOPS-
           ref: main
-          path: external-repo # This puts the code in a sub-folder
+          path: external-repo  # Clones into ./external-repo
 
       - name: List files to verify
-        run: ls -R external-repo
+        run: ls -R external-repo  # Fixed: Removed invalid text
+
+      - name: Additional verification (optional)
+        run: |
+          pwd
+          ls -la
+          find external-repo -type f | head -10  # Shows first 10 files
