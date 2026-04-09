@@ -1,0 +1,15 @@
+name: myfirstpipeline123
+
+# Controls when the workflow will run
+on:
+  workflow_dispatch: # Allows you to manually run this from the Actions tab
+
+jobs:
+  clone-repo-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone public repo via HTTPS
+        uses: actions/checkout@v4
+        with:
+          repository: GEETHA9999/DevOPS-
+          ref: main
