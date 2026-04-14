@@ -9,10 +9,7 @@ jobs:
     steps:
       - name: Checkout external public repo
         uses: actions/checkout@v4
-        with:
-          repository: manojcloud88/testrepo
-          ref: main
-          path: external-repo  # Clones into ./external-repo
+      
 
       - name: List files to verify
         run: ls -R external-repo  # Fixed: Removed invalid text
