@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Checkout external public repo
         uses: actions/checkout@v4
-         with:
+        with:
           repository: manojcloud88/testrepo
           ref: master
           path: external-repo  # Clones into ./
