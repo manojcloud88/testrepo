@@ -10,7 +10,7 @@ jobs:
       - name: Checkout external public repo
         uses: actions/checkout@v4
         with:
-          repository: GEETHA9999/DevOPS-
+          repository: manojcloud88/testrepo
           ref: main
           path: external-repo  # Clones into ./external-repo
 
